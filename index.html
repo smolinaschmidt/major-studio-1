@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paintings & Miniatures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header id="main-header" class="clickable">
+    <h1>Unveiling Revolutionary<br>Paintings & Miniatures</h1>
+    <p>1770 - 1820</p>
+  </header>
+  <main id="gallery"></main>
+
+  <section id="cluster-view" class="hidden">
+    
+    <header id="cluster-header">
+        <button id="back-btn">← Go Back</button>
+    </header>
+    
+    <div id="waffle-chart-container">
+        <div id="waffle-text-area">
+            <h2 id="waffle-percentage"></h2>
+            <p id="waffle-description"></p>
+
+        </div>
+        <div id="waffle-grid"></div>
+    </div>
+
+    <div id="decade-panel" class="hidden">
+        <button id="close-panel">X</button>
+        <h3>Obras de la Década</h3>
+        <div id="decade-buttons"></div>
+        <div id="decade-results"></div>
+    </div>
+    
+  </section>
+
+  <div id="image-viewer-overlay" aria-hidden="true">
+    <div id="image-viewer" role="dialog" aria-label="Imagen ampliada">
+      <img id="viewer-image" src="" alt="Obra de arte ampliada">
+      <div id="viewer-caption"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
